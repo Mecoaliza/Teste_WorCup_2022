@@ -89,6 +89,7 @@ Facilidade de consulta e análise e Flexibilidade.
 - A documentação foi criada usando a ferramenta Power BI Helper, onde é possível vizualisar mais detalhes de tabelas que foram usadas ou tão, 
 todas as relações, quais foram as formulas usadas, quais informações tem em ca file da coluna, entre vários outros detalhes.
 
+O link para baixar o arquivo está [disponível aqui](https://onedrive.live.com/?id=7782EEBC0072CC7B%212329&cid=7782EEBC0072CC7B)
 
 
 
