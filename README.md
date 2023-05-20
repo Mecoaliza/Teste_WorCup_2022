@@ -25,7 +25,7 @@ O link para baixar o arquivo está [disponível aqui](https://onedrive.live.com/
 
 #### Transformação Pentaho
 
-*Ferramenta utilizada para preencher campos nulos, mudar tipo dos dados, fazer carga no sql, etc.
+- [ ]Ferramenta utilizada para preencher campos nulos, mudar tipo dos dados, fazer carga no sql, etc.
 
 ![Captura de tela 2023-05-20 145319](https://github.com/Mecoaliza/CEPE/assets/113151407/21140b1d-b875-41db-b9be-b02142594286)
 
