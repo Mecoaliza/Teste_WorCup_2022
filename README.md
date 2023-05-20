@@ -20,7 +20,9 @@ O link para baixar o arquivo está [disponível aqui](https://onedrive.live.com/
 
 ### Fluxo de ETL
 
-<img src= "C:\Users\mecoa\Pictures\Screenshots\Captura de tela 2023-05-20 144905.png">
+<img src="C:\Users\mecoa\Pictures\Captura de tela 2023-05-20 144905.png">
+
+<img src="imagens\transformacao pentaho.jpeg">
 
 #### Transformação Pentaho
 
