@@ -60,4 +60,4 @@ goals = SUM(player_stats[goals])
 
 ### Documentação 
 
-[disponível aqui](file:///C:/Users/mecoa/Downloads/Estatisticas%20Futebolistica%20-%20Copa%20do%20Mundo%202022/Documentacao.htm)
+file:///C:/Users/mecoa/Downloads/Estatisticas%20Futebolistica%20-%20Copa%20do%20Mundo%202022/Documentacao.htm 
