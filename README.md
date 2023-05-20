@@ -55,8 +55,12 @@ in
 
 - Criei apenas algumas métricas simples, usei mais nos cards
 
+```
 goals = SUM(player_stats[goals]) 
+```
+```
 goals = SUM(player_stats[goals]) 
+```
 
 ### Modelagem e relacionamentos
 
@@ -82,6 +86,7 @@ Facilidade de consulta e análise e Flexibilidade.
 
 ### Documentação 
 
-- A documentação foi criada usando a ferramenta Power BI Helper
+- A documentação foi criada usando a ferramenta Power BI Helper, onde é possível vizualisar mais detalhes de tabelas que foram usadas ou tão, 
+todas as relações, quais foram as formulas usadas, quais informações tem em cada coluna, entre vários outros detalhes.
 
 file:///C:/Users/mecoa/Downloads/Estatisticas%20Futebolistica%20-%20Copa%20do%20Mundo%202022/Futebol.htm
