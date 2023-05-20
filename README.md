@@ -14,7 +14,7 @@ O link para baixar o arquivo está [disponível aqui](https://onedrive.live.com/
 
 ### Soluções Utilizadas
 
-- Pentaho
+- Pentaho 
 - SQL Server
 - Power BI
 
@@ -25,33 +25,54 @@ O link para baixar o arquivo está [disponível aqui](https://onedrive.live.com/
 
 #### Transformação Pentaho
 
+*Ferramenta utilizada para preencher campos nulos, mudar tipo dos dados, fazer carga no sql, etc.
+
 ![Captura de tela 2023-05-20 145319](https://github.com/Mecoaliza/CEPE/assets/113151407/21140b1d-b875-41db-b9be-b02142594286)
 
-#### Modelagem Dimensional
-
-![Captura de tela 2023-05-20 145904](https://github.com/Mecoaliza/CEPE/assets/113151407/ace0b818-0854-483d-945c-7c42bf82a26b)
 
 ####  Linguagem M: Tratamento de dados, criação de colunas, mesclagens
 
+*Algumas expressões usadas em M, porém não usei muitas, pois boa parte do tratamento foi feito no Pentaho
+
+'''
+let
+    Fonte = Sql.Databases("DESKTOP-U7K3B00"),
+    soccer = Fonte{[Name="soccer"]}[Data],
+    dbo_player_keepers = soccer{[Schema="dbo",Item="player_keepers"]}[Data]
+in
+    dbo_player_keepers
+'''
+
 = Table.TransformColumnTypes(Fonte,{{"id_position", type text}, {"nm_descricao", type text}})
+
+
 = Table.NestedJoin(dbo_player_stats, {"position"}, dim_position, {"id_position"}, "dim_position", JoinKind.LeftOuter)
 
 ![Captura de tela 2023-05-20 150132](https://github.com/Mecoaliza/CEPE/assets/113151407/449a8ab9-f77e-440f-8ff2-03d8295a2dff)
 
 #### Linguagem DAX: criação de métricas
 
+*Criei apenas algumas métricas simples, usei mais nos cards
+
 goals = SUM(player_stats[goals]) 
 goals = SUM(player_stats[goals]) 
 
 ### Modelagem e relacionamentos
 
+*A modelagem foi a star schema, que possui algumas vantagens como: Simplicidade, Desempenho de consulta, Facilidade de manutenção,
+Facilidade de consulta e análise e Flexibilidade.
+
+
 ![Captura de tela 2023-05-20 145904](https://github.com/Mecoaliza/CEPE/assets/113151407/8d4bb001-ddec-48cb-8114-676496423e86)
 
 ### Indicadores/bookmarks
+*Criei indicadores que limpam os filtros e usei como botão para facilitar a experiência do usuário
 
 ![Captura de tela 2023-05-20 150620](https://github.com/Mecoaliza/CEPE/assets/113151407/fe706983-45c1-4850-90ab-506261096da5)
 
 ### Tooltips
+
+*As tooltips criadas foi de detalhamento de quais jogadores receberam cartão amarelo ou vermelho.
 
 ![Captura de tela 2023-05-20 150728](https://github.com/Mecoaliza/CEPE/assets/113151407/22c4cfe1-c834-4c15-af75-0565968f5171)
 
@@ -60,4 +81,6 @@ goals = SUM(player_stats[goals])
 
 ### Documentação 
 
-file:///C:/Users/mecoa/Downloads/Estatisticas%20Futebolistica%20-%20Copa%20do%20Mundo%202022/Documentacao.htm 
+*A documentação foi criada usando a ferramenta Power BI Helper
+
+file:///C:/Users/mecoa/Downloads/Estatisticas%20Futebolistica%20-%20Copa%20do%20Mundo%202022/Futebol.htm
