@@ -36,7 +36,7 @@ O link para baixar o arquivo está [disponível aqui](https://onedrive.live.com/
 
 ```
 let
-    Fonte = Sql.Databases("DESKTOP-U7K3B00"),
+    Fonte = Sql.Databases("DESKTOP-a4sfcc1d7d"),
     soccer = Fonte{[Name="soccer"]}[Data],
     dbo_player_keepers = soccer{[Schema="dbo",Item="player_keepers"]}[Data]
 in
@@ -89,7 +89,8 @@ Facilidade de consulta e análise e Flexibilidade.
 - A documentação foi criada usando a ferramenta Power BI Helper, onde é possível vizualisar mais detalhes de tabelas que foram usadas ou tão, 
 todas as relações, quais foram as formulas usadas, quais informações tem em ca file da coluna, entre vários outros detalhes.
 
-O link para baixar o arquivo está [disponível aqui](file:///C:/Users/mecoa/AppData/Local/Microsoft/Windows/INetCache/IE/O9Z1BCA1/Futebol[2].htm)
+
+
 
 
 
